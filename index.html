@@ -121,13 +121,15 @@
         <div class="form-container">
             <form  name="submit-to-google-sheet">
                 <input name="email" type="email" placeholder="Email" required>
+             <input name="name" type="name" placeholder="Name" required>
+             <input name="number" type="number" placeholder="Number" required>
                 
                 <button type="submit"><img src="send-icon.png" width="30px" ></button>
               </form>
          <label  id="emai" for="email">Fill in ur details</label>
               
               <script>
-                const scriptURL = 'https://script.google.com/macros/s/AKfycbwBwVDa0dSasAQOG4ooHV0TDG4d6HDm9ShDKX8nnxqr-ctAGEnxSJsga3z_FNpcPaluag/exec'
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbykWvOqdZzVNivHCQtyyIXtwafTJG3Dp-VDa66Pb5603YM-nXzDXgvB6Fe_R75BWWVnNQ/exec'
     const form = document.forms['submit-to-google-sheet']
     
     form.addEventListener('submit', Agnoirc4900j => {
