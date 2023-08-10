@@ -319,7 +319,7 @@ display: block;
 }
 form{
     background: #fff;
-    display: flex;
+   
     width: fit-content;
     position: relative;
     top: -100px;
