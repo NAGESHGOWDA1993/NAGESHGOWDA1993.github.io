@@ -8,6 +8,8 @@
 html
 {
     scroll-behavior: smooth;
+    scroll-padding:
+    var(--scroll-padding,5rem);
 }
 body
 {
@@ -38,6 +40,8 @@ body
 .container
 {
     padding: -5px 10vh;
+     position: relative;
+    bottom: 60px;
 }
 
 .logo
@@ -59,7 +63,7 @@ nav ul li a{
     text-decoration: none;
    
     position: relative;
-    top: -45px;
+    top: -47px;
     right: 20px;
     
     font-size: 100%;
@@ -96,33 +100,23 @@ nav ul li a::after
     margin: 40%;
    font-size: auto;
    
-   top: -400px;
+   top: -350px;
    position: relative;
    
     
   }
-  .header-text h1
-  {
-    
-    font-size: 30px;
-    
-    position: absolute;
-    top:30px;
-    margin-top: auto;
-    display: inline-block;
-
-  }
+ 
   .header-text h1 span
   {
-    color: red;
+    color: orange;
     font-size: 105%;
   }
 #about
 {
     padding: 80px 0;
-    color: rgb(121, 114, 114);
+    color: rgb(150, 233, 233);;
     position: absolute;
-    top:151.26050420168067vh;
+    top: 151.26050420168067vh;
     
 }
 .about-col-1 img
@@ -130,6 +124,9 @@ nav ul li a::after
    height: 500px;
    width: 400px;
    border-radius: 40px;
+   position: relative; 
+    bottom: 20px;
+
   
 }
 
@@ -155,9 +152,23 @@ flex-basis: 90%;
     font-weight: 600;
 }
 .para
-{
-    font-size: small;
+{  
+    font-size:medium;
+    font-weight: 400;
+    font-family: Helvetica;
     position: relative;
+    color: #ffffffbc;
+    left:10px;
+    transition: 2s;
+
+}
+.para:hover
+{  
+    font-size:medium;
+    font-weight: 400;
+    font-family: Helvetica;
+    position: relative;
+    color: #fff;
     left:10px;
 }
 .tab-links
@@ -228,16 +239,16 @@ flex-basis: 90%;
 .linkedin
 {
     height: 90px;
-    width: 140px;
+    width: 130px;
     cursor: pointer;
     position: relative;
-    right: 30px;
+    right: 40px;
     bottom: 15px;
 }
 .linkedin:hover
 {
     height: 100px;
-    width: 150px;
+    width: 140px;
     cursor: pointer;
     position: relative;
     right: 30px;
@@ -261,15 +272,25 @@ flex-basis: 90%;
     right: 80px;
     bottom: 5px;
 }
-.imaee
+.whatsapp
 {
-    position: absolute;
-    top: 180px;
-    right: -140px;
-
-    display: flex;
-    margin: 20px 0 40px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    position: relative;
+    right: 90px;
+    bottom: 2px;
 }
+.whatsapp:hover
+{
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    position: relative;
+    right: 90px;
+    bottom: 10px;
+}
+
 .imae{
     margin-inline-start: 60px;
     
@@ -306,11 +327,11 @@ display: block;
 {
     display: block;
 }
-.form-container{
+#form-container{
     position: relative;
-    top: 600px;
+    top: 100.84033613445378vh;
     align-items: center;
-    left: 50%;
+    left: 0%;
     
 }
 .empty{
@@ -318,16 +339,18 @@ display: block;
     height: 100%;
 }
 form{
-    background: #fff;
-   
+    
+    
     width: fit-content;
     position: relative;
     top: -100px;
-    right: 200px;
+    right: -400px;
+
  
 }
 form input
 {
+    background: #fff;
     border: 0;
     outline: none;
     padding: 10px 20px;
@@ -341,8 +364,11 @@ form button
     background: #61b752;
     border :none;
 outline: none;
-height:70px ;
-width: 100px;
+height:50px ;
+width: 400px;
+position: relative;
+top: 0px;
+left:0px;
 cursor: pointer;
 
 
@@ -351,8 +377,13 @@ cursor: pointer;
 {
     font-size: large;
     position: relative;
-    top: -80px;
-    right: 200px;
+    top: 10px;
+   
     font-family: sans-serif;
     color: #61b752;
+}
+@media all and (max-width: 600px){
+   #header {
+    visibility: hidden;
+   }
 }
