@@ -323,10 +323,6 @@ flex-basis: 90%;
 {
 display: block;
 }
-.dropdown-menu
-{
-    display: block;
-}
 #form-container{
     position: relative;
     top: 100.84033613445378vh;
