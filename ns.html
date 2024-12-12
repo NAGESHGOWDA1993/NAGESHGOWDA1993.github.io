@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <style>
+        /* General styling for the whole page */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #1A2A5B;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 30px;
+            font-weight: 600;
+            color: #FF8C00;
+            margin: 0;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+            border: 2px solid #FF8C00;
+        }
+
+        .profile-text {
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .profile-text h2 {
+            font-size: 22px;
+            color: #FF8C00;
+            margin: 10px 0;
+            display: inline; /* Inline for name */
+        }
+
+        .typed-cursor {
+            font-size: 22px;
+            color: #FF8C00;
+            display: inline-block;
+        }
+
+        .profile-text p {
+            font-size: 14px;
+            color: #DCDFE9;
+            line-height: 1.6;
+        }
+
+        .location {
+            font-size: 12px;
+            color: #DCDFE9;
+            margin: 10px 0;
+        }
+
+        /* Button styling */
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #FF8C00;
+            color: white;
+            font-size: 12px; /* Smaller font size */
+            padding: 6px 12px; /* Smaller padding */
+            border-radius: 4px; /* Slightly smaller border-radius */
+            text-decoration: none;
+            text-align: center;
+            width: 120px; /* Reduced width */
+            transition: background-color 0.3s ease, border 0.3s ease;
+            border: 1px solid #FF8C00; /* Resized border */
+        }
+
+        .button:hover {
+            background-color: #D87A00;
+            border-color: #D87A00;
+        }
+
+        .button:active {
+            background-color: #B76C00;
+        }
+
+        .button img {
+            width: 16px;
+            margin-right: 4px;
+        }
+
+        .button.medium {
+            background-color: #00ab6c;
+            border-color: #00ab6c;
+        }
+
+        .button.medium:hover {
+            background-color: #00895e;
+            border-color: #00895e;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 26px;
+            }
+
+            .buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .profile-text h2 {
+                font-size: 20px;
+            }
+
+            .profile-text p {
+                font-size: 12px;
+            }
+
+            .location {
+                font-size: 10px;
+            }
+
+            .profile-image {
+                width: 100px;
+                height: 100px;
+            }
+
+            .button {
+                width: 100%;
+                padding: 6px;
+                font-size: 12px; /* Smaller font size for mobile */
+            }
+        }
+
+        /* Desktop responsiveness */
+        @media (min-width: 1024px) {
+            .container {
+                padding: 40px;
+            }
+
+            .header h1 {
+                font-size: 36px;
+            }
+
+            .profile-text h2 {
+                font-size: 28px;
+            }
+
+            .profile-text p {
+                font-size: 16px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <img class="profile-image" src="/Users/admin/Desktop/CIG Assignment /new webiste/photo/Screenshot 2024-12-09 at 23.19.25.png" alt="Profile Picture">
+            <div class="profile-text">
+                <h2 id="auto-type">Nagesha Somashekara</h2> <!-- Dynamic typing will happen here -->
+                <span class="typed-cursor"></span> <!-- Cursor added here for inline effect -->
+                <div class="location">
+                    <span>&#x1F4CD;</span> United Kingdom
+                </div>
+                <p>DevOps and Cloud Engineer with over 5 years of experience in optimizing cloud environments and automating infrastructure across AWS, GCP, and Azure. Passionate about AI, tech blogging, and building scalable, secure systems. Find my CV <a href="/Users/admin/Desktop/CIG Assignment /new webiste/CV/NAGESHA-KS-CV.pdf" style="color: #FF8C00;">here</a>, showcasing expertise in CI/CD pipelines, infrastructure-as-code solutions, and cloud performance optimization. In my free time, I explore AI innovations, swim, play tennis, or enjoy music.</p>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <a href="mailto:nageshaks9743@gmail.com" class="button"><img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" alt="Mail Icon">Contact me</a>
+            <a href="https://www.linkedin.com/in/nageshaks" class="button"><img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn Icon">LinkedIn</a>
+            <a href="https://github.com/NAGESHGOWDA1993" class="button"><img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub Icon">GitHub</a>
+            <a href="https://medium.com/@nageshaks9743" class="button medium"><img src="https://img.icons8.com/ios-filled/50/ffffff/medium-logo.png" alt="Medium Icon">Medium Blog</a>
+        </div>
+    </div>
+
+    <script>
+        var typed = new Typed("#auto-type", {
+            strings: ["Cloud&DevOps Engineer", "Software Engineer", "Chess Player"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
